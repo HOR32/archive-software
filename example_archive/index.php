@@ -84,7 +84,7 @@ while (false !== ($entry = $d->read())) {
 }
 echo '</div>';
 $d->close();
-
+sort($files);
 echo "<div id='file_list'>";
 foreach ($files as $f) {
     $ext = pathinfo($f, PATHINFO_EXTENSION);
